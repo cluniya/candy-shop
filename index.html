@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Candy Shop</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Candy Shop</h1>
+        <form id="candyForm">
+            <input type="text" id="candyName" placeholder="Candy Name" required>
+            <input type="text" id="candyDescription" placeholder="Description" required>
+            <input type="number" id="candyPrice" placeholder="Price" required>
+            <input type="number" id="candyQuantity" placeholder="Quantity" required>
+            <button type="submit" id="addItemBtn">Add Item</button>
+            <button type="button" id="editItemBtn" style="display: none;">Edit Item</button>
+            <button type="button" id="deleteItemBtn" style="display: none;">Delete Item</button>
+        </form>
+        <ul id="candyList"></ul>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.5.1/axios.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
